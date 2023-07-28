@@ -3,6 +3,12 @@ const submitButton = document.querySelector('#submit');
 const outputElement = document.querySelector('#output');
 const inputElement = document.querySelector('input');
 const historyElement = document.querySelector('.history');
+const buttonElement = document.querySelector('button');
+
+function changeInput(VALUE){
+    const INPUTELEMENT = document.querySelector('input');
+    INPUTELEMENT.value = VALUE;
+}
 
 async function getMessage(){
     console.log('clicked');
@@ -26,6 +32,7 @@ async function getMessage(){
         if(data.choices[0].message.content){
             const pElement = document.createElement('p');
             pElement.textContent = inputElement.value;
+            p.addEventListener('click', () => changeInput(pElement.textContent));
             historyElement.append(pElement); //can also try adding numbers to each history chat for listing chats in numerical order
         }
     } catch (error){
@@ -34,3 +41,10 @@ async function getMessage(){
 }
 
 submitButton.addEventListener('click',getMessage);
+
+function clearInput(){
+    inputElement.value = '';
+
+}
+
+buttonElement.addEventListener('click', clearInput);
