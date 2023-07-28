@@ -1,3 +1,4 @@
 # DesiGPT
 
-![image](https://github.com/vishalsingh2972/JS-DesiGPT/assets/106817047/089b2c38-b63e-4c99-b652-07abc7fbcc54)
+https://github.com/vishalsingh2972/JS-DesiGPT/assets/106817047/bc5d6133-d76a-47e2-afa8-f72b64ca6d93
+
