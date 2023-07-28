@@ -1,4 +1,4 @@
-# DesiGPT 
+# DesiGPT  :electron: 🤖 :atom:  
 
 ## About the Project
 This project is a fully functional clone of the ChatGPT chatbot, built entirely using vanilla JavaScript.
